@@ -2,8 +2,8 @@ pipeline {
     environment{
         IMAGE_NAME="static-app-jenkins"
         TAG="latest"
-        STG_URL="ec2-3-86-82-158.compute-1.amazonaws.com"
-        PROD_URL="ec2-3-92-132-173.compute-1.amazonaws.com"
+        STG_URL="ec2-3-83-226-113.compute-1.amazonaws.com"
+        PROD_URL="ec2-3-92-226-66.compute-1.amazonaws.com"
         USR_REGISTRY="meskine"
         EXT_PORT="80"
         INT_PORT="80"
