@@ -30,6 +30,8 @@ pipeline {
             steps{
                 script{
                     sh '''
+                    docker stop $CONTAINER_NAME || echo 'Container not running'
+                    docker rm $CONTAINER_NAME || echo 'Container not found
                     docker run -d -p $EXT_PORT:$INT_PORT  --name $CONTAINER_NAME $IMAGE_NAME:$TAG
                     sleep 10
                     docker ps
