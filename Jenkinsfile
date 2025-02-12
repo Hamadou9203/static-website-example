@@ -63,7 +63,7 @@ pipeline {
             }
             steps{
                 script{
-                    echo "deploying to shell-script to ec2"
+                    echo "deploying to shell-script to ec2 en staging"
                     def pullcmd="docker pull $USR_REGISTRY/$IMAGE_NAME:$TAG"
                     def stopcmd=" docker stop $CONTAINER_NAME || echo 'Container not running'"
                     def rmvcmd=" docker rm $CONTAINER_NAME || echo 'Container not found'"
