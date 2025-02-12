@@ -1,7 +1,7 @@
 FROM httpd:2.4-alpine
 # COPY . /usr/local/apache2/htdocs/
 
-RUN rm -f /usr/local/apache2/htdocs/ \
+RUN rm -rf /usr/local/apache2/htdocs/ \
    && git clone https://github.com/Hamadou9203/static-website-example.git /usr/local/apache2/htdocs/
 EXPOSE 80 
 # Run the image as a non-root user
