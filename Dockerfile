@@ -7,7 +7,7 @@ RUN apk update && \
 
 
 RUN rm -rf /usr/local/apache2/htdocs/ \
-   && git clone https://github.com/Hamadou9203/static-website-example.git /usr/local/apache2/htdocs/
+   && git clone --depth 1 https://github.com/Hamadou9203/static-website-example.git /usr/local/apache2/htdocs/
 EXPOSE 80 
 # Run the image as a non-root user
 
