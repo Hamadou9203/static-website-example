@@ -32,6 +32,7 @@ pipeline {
                     sh '''
                     docker run -d -p $EXT_PORT:$INT_PORT  --name $CONTAINER_NAME $IMAGE_NAME:$TAG
                     sleep 10
+                    docker ps
                     curl http://$DOMAIN:$EXT_PORT 
                     sleep 5
                     docker stop $CONTAINER_NAME
