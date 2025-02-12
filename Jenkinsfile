@@ -7,7 +7,7 @@ pipeline {
         USR_REGISTRY="meskine"
         EXT_PORT="80"
         INT_PORT="80"
-        CONTAINER_NAME="static-app"
+        CONTAINER_NAME="static-web-app"
         DOMAIN="172.17.0.1"
         SSH_USER="ubuntu"
     }
