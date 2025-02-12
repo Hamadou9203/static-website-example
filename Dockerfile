@@ -1,10 +1,9 @@
 FROM httpd:2.4-alpine
 # COPY . /usr/local/apache2/htdocs/
 
-RUN apt-get update && \ 
-    apt-get install -y git \
-    && apt-get clean \ 
-    && rm -rf /var/lib/apt/lists/*
+RUN apk update && \ 
+    apk add --no-cache git\
+    
 
 
 RUN rm -rf /usr/local/apache2/htdocs/ \
